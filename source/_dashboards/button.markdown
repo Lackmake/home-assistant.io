@@ -80,9 +80,9 @@ icon:
   type: string
   default: Entity domain icon
 image:
-  description: Path to a local image (for example, `/local/my_image.png`), a media-source ID, or a URL to display instead of an icon.
+  description: Path to a local image (for example, `/local/my_image.png`), a media-source ID, or a URL to display instead of an icon. Also accepts a map with a `media_content_id` key containing the path, ID, or URL.
   required: false
-  type: string
+  type: [string, map]
 show_name:
   required: false
   description: If false, the button name is not shown on the card.
